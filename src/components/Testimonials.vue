@@ -35,10 +35,12 @@
   color: #fff;
   background: url('../assets/img/ecoquartiers.jpg') no-repeat center center;
   background-size: cover;
+  /* background-attachment: fixed;  */
   padding: 4.8rem 0;
   overflow: hidden;
   height: 430px;
 }
+
 
 .overlay {
   position: absolute;

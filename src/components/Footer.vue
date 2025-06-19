@@ -2,7 +2,7 @@
   <footer class="footer">
     <FooterSocial />
     <FooterColumn title="Informations" :items="['À propos', 'IUT Troyes', 'IUT Castres']" />
-    <FooterColumn title="Resources" :items="['Confidentialité', 'Conditions d\'utilisation', 'Mentions légales', 'Cookies']" />
+    <FooterColumn title="Ressources" :items="['Confidentialité', 'Conditions d\'utilisation', 'Mentions légales', 'Cookies']" />
   </footer>
 </template>
 

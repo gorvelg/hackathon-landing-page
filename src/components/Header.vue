@@ -19,7 +19,7 @@ import lionLogo from '@/assets/img/lion-logo.svg';
         <span>Quartier de la Duchère - Lyon</span>
       </div>
       <div class="btn">
-        Télécharger l'application
+        Découvrir l'application
       </div>
     </div>
   </header>
