@@ -10,8 +10,10 @@ import lionLogo from '@/assets/img/lion-logo.svg';
     backgroundSize: 'auto 80%' 
   }">
     <div class="header__content">
-      <p>Soyez tous connectés</p>
-      <h1 class="header__content__heading">Polygone's</h1>
+      <div>
+        <p class="slogan">Soyez tous connectés</p>
+        <h1 class="header__content__heading">Polygone's</h1>
+      </div>
       <div class="header__content__subheading">
         <span>Application citoyenne</span>
         <span>Quartier de la Duchère - Lyon</span>
@@ -32,6 +34,15 @@ import lionLogo from '@/assets/img/lion-logo.svg';
   background-color: #003787; 
   min-height: 250px;
   color: white;
+  height: 100vh;
+}
+.slogan {
+ color: var(--light-text-color, #FFF);
+font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
 .header__content {
     display: flex;

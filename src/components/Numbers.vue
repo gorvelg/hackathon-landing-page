@@ -33,9 +33,8 @@
 <style scoped>
 .numbers-container {
     display: flex;
-
-    align-items: center;
     padding: 4.8rem 0;
+    gap: 2.4rem;
 }
 .numbers-heading {
     font-size: 5rem;

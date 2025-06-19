@@ -4,6 +4,7 @@ import Content from '@/components/Content.vue';
 import Features from '@/components/Features.vue';
 import Testimonials from '@/components/Testimonials.vue';
 import Numbers from '@/components/Numbers.vue';
+import Footer from '@/components/Footer.vue';
 </script>
 
 <template>
@@ -16,6 +17,7 @@ import Numbers from '@/components/Numbers.vue';
   <Testimonials />
   <div class="wrapper">
     <Numbers/>
+    <Footer/>
   </div>
 </template>
 
