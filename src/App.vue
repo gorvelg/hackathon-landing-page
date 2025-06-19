@@ -6,8 +6,30 @@ import Testimonials from '@/components/Testimonials.vue';
 import Numbers from '@/components/Numbers.vue';
 import Footer from '@/components/Footer.vue';
 import { useI18n } from 'vue-i18n'
+import { onMounted } from 'vue';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
 const { locale } = useI18n()
+
+gsap.registerPlugin(ScrollTrigger)
+
+onMounted(() => {
+  const sections = ['.content', '.features', '.testimonials', '.numbers-container']
+  sections.forEach(selector => {
+    gsap.from(selector, {
+      scrollTrigger: {
+        trigger: selector,
+        start: 'top 80%',
+        toggleActions: 'play none none none',
+      },
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      ease: 'power2.out'
+    })
+  })
+})
 </script>
 
 <template>
@@ -74,7 +96,7 @@ const { locale } = useI18n()
 .lang-toggle button {
   all: unset;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2.4rem;
   padding: 0.6rem 0.8rem;
   transition: background 0.2s ease;
 }
