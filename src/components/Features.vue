@@ -39,4 +39,12 @@ section {
     gap: 2rem;
     justify-content: center;
 }
+@media (max-width: 768px) {
+  
+ 
+  .features{
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+  
+}
 </style>

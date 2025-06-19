@@ -37,4 +37,12 @@ const props = defineProps({
     color: #737373;
     line-height: 1.5;
 }
+@media (max-width: 768px) {
+  
+
+  .feature-card{
+    align-items: center;
+  }
+  
+}
 </style>

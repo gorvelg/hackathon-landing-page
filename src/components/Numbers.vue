@@ -91,4 +91,21 @@ line-height: normal;
     font-size: 1.5rem;
     color: #333;
 }
+@media (max-width: 768px) {
+ 
+  .numbers-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .numbers-heading {
+    align-items: center;
+    
+  }
+  .numbers-heading h2{
+    font-size: 5rem;
+  }
+  .subtitle {
+    margin: -16px 0;
+  }
+}
 </style>

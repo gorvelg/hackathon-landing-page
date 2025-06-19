@@ -96,4 +96,21 @@ section {
 .offset {
   margin-left: 80px; 
 }
+@media (max-width: 768px) {
+  
+  .content{
+    flex-direction: column;
+  }
+  .hex-img-hover {
+    width: 100%;
+    height: auto;
+  }
+  .poly, .poly-2 {
+    display: none;
+  }
+  .offset {
+    margin-left: 0; 
+  }
+ 
+}
 </style>

@@ -10,8 +10,9 @@ const { t } = useI18n()
     backgroundImage: `url(${lionLogo})`,
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'right center',
-    backgroundSize: 'auto 80%' 
+    backgroundSize: '50%' 
   }">
+    <img src="@/assets/img/lion-logo.svg" alt="lion logo" class="header__logo" />
     <div class="header__content">
       <div>
         <p class="slogan">{{ t('header-slogan') }}</p>
@@ -38,6 +39,11 @@ const { t } = useI18n()
   min-height: 250px;
   color: white;
   height: 100vh;
+}
+.header__logo {
+  width: 100%;
+  height: auto;
+  display: none;
 }
 .slogan {
  color: var(--light-text-color, #FFF);
@@ -83,5 +89,36 @@ line-height: normal;
 }
 .btn:hover {
     background: #3c8cbe;
+}
+@media (max-width: 1280px) {
+   .header {
+    background-image: none !important;
+    flex-direction: row-reverse;
+    height: auto;
+    padding: 0;
+    
+  }
+   .header__logo {
+    display: block;
+    width: 400px;
+  }
+   .header__content{
+  padding: 2.4rem;
+  align-items: center;
+ }
+ .header__content__heading{
+  font-size: 5rem;
+ }
+}
+  
+@media (max-width: 768px) {
+ .header{
+  flex-direction: column;
+ }
+ .header__logo {
+    width: 100%;
+  
+  }
+
 }
 </style>

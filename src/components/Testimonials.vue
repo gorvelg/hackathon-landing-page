@@ -84,4 +84,13 @@ const { t } = useI18n()
     transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+  
+
+  
+  
+ 
+ 
+}
+
 </style>
