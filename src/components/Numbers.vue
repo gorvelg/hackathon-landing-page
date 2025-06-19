@@ -1,35 +1,41 @@
 <template>
-    <section>   
-        <div class="numbers-container">
-            <div class="numbers-heading">
-                <h2>Polygone's </h2>
-                <span class="subtitle">en chiffre</span>
-            </div>
+  <section>   
+    <div class="numbers-container">
+      <div class="numbers-heading">
+        <h2>Polygone's</h2>
+        <span class="subtitle">{{ t('numbers-title') }}</span>
+      </div>
 
-            <div class="numbers">
-                <div class="number-item">
-                    <h3>-20%</h3>
-                    <p>De voiture en moins dans le quartier</p>
-                </div>
-                <div class="number-item">
-                    <h3>2000</h3>
-                    <p>Téléchargement de l'application</p>
-                </div>
-                <div class="number-item">
-                    <h3>4.5</h3>
-                    <div>
-                        <img src="@/assets/img/icn bxs-star-full.svg" alt="TrustPilot" >
-                        <img src="@/assets/img/icn bxs-star-full.svg" alt="TrustPilot" >
-                        <img src="@/assets/img/icn bxs-star-full.svg" alt="TrustPilot" >
-                        <img src="@/assets/img/icn bxs-star.svg" alt="TrustPilot" >
-                        <img src="@/assets/img/icn bx-star.svg" alt="TrustPilot" >
-                    </div>
-                    <p>sur TrustPilot</p>
-                </div>
-            </div>
+      <div class="numbers">
+        <div class="number-item">
+          <h3>-20%</h3>
+          <p>{{ t('numbers-1') }}</p>
         </div>
-    </section>
+        <div class="number-item">
+          <h3>2000</h3>
+          <p>{{ t('numbers-2') }}</p>
+        </div>
+        <div class="number-item">
+          <h3>4.5</h3>
+          <div>
+            <img src="@/assets/img/icn bxs-star-full.svg" alt="TrustPilot" >
+            <img src="@/assets/img/icn bxs-star-full.svg" alt="TrustPilot" >
+            <img src="@/assets/img/icn bxs-star-full.svg" alt="TrustPilot" >
+            <img src="@/assets/img/icn bxs-star.svg" alt="TrustPilot" >
+            <img src="@/assets/img/icn bx-star.svg" alt="TrustPilot" >
+          </div>
+          <p>{{ t('numbers-3') }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
+
 <style scoped>
 .numbers-container {
     display: flex;

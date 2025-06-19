@@ -4,14 +4,13 @@
         <div class="content_description">
             <h2 class="heading-2">Polygone's</h2>
             <p>
-                Née à Lyon pour donner une voix aux habitants et faire de chaque gone un acteur de sa ville !
+                {{ $t('content-1') }}
             </p>
             <p>
-                Elle propose une carte interactive, un fil d’actualité locale et un système de signalement en direct, permettant à chacun de participer activement à l’amélioration de son environnement quotidien.
+               {{ $t('content-2') }}
             </p>
             <p>
-                Portée par des valeurs d’inclusion, de transparence et de durabilité, elle accompagne la transformation des quartiers lyonnais en donnant à chacun les moyens d’agir.
-polyGONE’S, c’est plusieurs gones, une même volonté : faire vivre la ville autrement.
+               {{ $t('content-3') }}
             </p>
         </div>
         <div class="content_image">

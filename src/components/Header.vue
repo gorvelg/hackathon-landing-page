@@ -1,5 +1,8 @@
 <script setup>
-import lionLogo from '@/assets/img/lion-logo.svg';
+import lionLogo from '@/assets/img/lion-logo.svg'
+import { useI18n } from 'vue-i18n'
+
+const { t } = useI18n()
 </script>
 
 <template>
@@ -11,15 +14,15 @@ import lionLogo from '@/assets/img/lion-logo.svg';
   }">
     <div class="header__content">
       <div>
-        <p class="slogan">Soyez tous connectés</p>
+        <p class="slogan">{{ t('header-slogan') }}</p>
         <h1 class="header__content__heading">Polygone's</h1>
       </div>
       <div class="header__content__subheading">
-        <span>Application citoyenne</span>
-        <span>Quartier de la Duchère - Lyon</span>
+        <span>{{ t('header-desc-1') }}</span>
+        <span>{{ t('header-desc-2') }}</span>
       </div>
       <div class="btn">
-        Découvrir l'application
+        {{ t('header-btn') }}
       </div>
     </div>
   </header>
@@ -77,5 +80,8 @@ line-height: normal;
   cursor: pointer;
   margin-top: 1rem;
   width: fit-content;
+}
+.btn:hover {
+    background: #3c8cbe;
 }
 </style>

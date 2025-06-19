@@ -2,7 +2,7 @@
 <template>
   <div class="footer-column">
     <h4>Contact</h4>
-    <p class="text">Rejoignez-nous sur nos réseaux sociaux</p>
+    <p class="text">{{ $t('footer-subtitle-21') }}</p>
     <div class="icons">
       <img src="@/assets/icons/facebook.svg" alt="Facebook" />
       <img src="@/assets/icons/instagram.svg" alt="Instagram" />

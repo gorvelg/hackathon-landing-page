@@ -4,16 +4,22 @@
       <div class="overlay"></div>
 
       <div class="testimonials-content">
-        <h2 class="testimonials-heading">Donnez votre avis !</h2>
+        <h2 class="testimonials-heading">{{ t('testimonials-title') }}</h2>
         <div class="testimonial">
-          <p>"Polygone's a transformé ma façon de voir mon quartier. Je me sens plus impliqué et écouté."</p>
-          <span>- Camille, habitante de la Duchère</span>
+          <p>{{ t('testimonials-subtitle') }}</p>
+          <span>{{ t('testimonials-author') }}</span>
         </div>
-        <div class="btn">Lire les avis</div>
+        <div class="btn">{{ t('testimonials-button') }}</div>
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+import { useI18n } from 'vue-i18n'
+const { t } = useI18n()
+</script>
+
 
 <style scoped>
 
@@ -71,6 +77,11 @@
   position: relative;
   z-index: 2;
   width: fit-content;
+  transition: 25ms transform ease-in;
+  cursor: pointer;
+}
+.btn:hover {
+    transform: scale(1.05);
 }
 
 </style>
