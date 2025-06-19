@@ -30,6 +30,7 @@ const props = defineProps({
     color: #3781B0;
     font-family: 'Blogh', sans-serif;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 .feature-desc {
     font-size: 1.6rem;

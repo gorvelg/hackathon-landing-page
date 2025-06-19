@@ -2,32 +2,34 @@
 import Header from '@/components/Header.vue';
 import Content from '@/components/Content.vue';
 import Features from '@/components/Features.vue';
+import Testimonials from '@/components/Testimonials.vue';
 </script>
 
 <template>
   <Header />
   
-  <main>
+  <div class="wrapper">
     <Content/>
     <Features />
-  </main>
+  </div>
+  <Testimonials />
 </template>
 
 <style scoped>
-main {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 @media (min-width: 600px) {
-  main {
+  .wrapper {
     padding: 0 2rem;
   }
 }
 
 @media (min-width: 1024px) {
-  main {
+  .wrapper {
     padding: 0 3rem;
   }
 }

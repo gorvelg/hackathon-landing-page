@@ -1,5 +1,6 @@
 <template>
-    <div class="content">
+    <section>
+            <div class="content">
         <div class="content_description">
             <h2 class="heading-2">Polygone's</h2>
             <p>
@@ -19,8 +20,13 @@ polyGONE’S, c’est plusieurs gones, une même volonté : faire vivre la ville
 
         </div>
     </div>
+    </section>
+
 </template>
 <style scoped>
+section {
+   padding: 4.8rem 0;
+}
 .content {
     display: flex;
     align-items: flex-start;

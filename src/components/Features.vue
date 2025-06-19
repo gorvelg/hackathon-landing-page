@@ -2,7 +2,8 @@
 import FeatureCard from '@/components/FeatureCard.vue';
 </script>
 <template>
-    <h2 class="heading-2">Nos valeurs</h2>
+    <section>
+            <h2 class="heading-2">Nos valeurs</h2>
     <div class="features">
         <FeatureCard
             name="Mobilité"
@@ -31,7 +32,17 @@ c’est se sentir écouté, en sécurité, entouré,
 et fier de contribuer à une ville plus humaine."
         />
     </div>
+    </section>
+
 </template>
 <style scoped>
-
+section {
+    padding: 4.8rem 0;
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
 </style>
