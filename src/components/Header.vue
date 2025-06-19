@@ -12,8 +12,10 @@ import lionLogo from '@/assets/img/lion-logo.svg';
     <div class="header__content">
       <p>Soyez tous connectés</p>
       <h1 class="header__content__heading">Polygone's</h1>
-      <span>Application citoyenne</span>
-      <span>Quartier de la Duchère - Lyon</span>
+      <div class="header__content__subheading">
+        <span>Application citoyenne</span>
+        <span>Quartier de la Duchère - Lyon</span>
+      </div>
       <div class="btn">
         Télécharger l'application
       </div>
@@ -34,6 +36,11 @@ import lionLogo from '@/assets/img/lion-logo.svg';
 .header__content {
     display: flex;
     flex-direction: column;
+    gap: 1.6rem;
+    max-width: 1200px;
+    width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 .header__content__heading {
   font-size: 9.6rem;
@@ -41,6 +48,13 @@ import lionLogo from '@/assets/img/lion-logo.svg';
   margin: 0.5rem 0;
   font-family: 'Blogh', sans-serif;
   text-transform: uppercase;
+}
+.header__content__subheading {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .btn {

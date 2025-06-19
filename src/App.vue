@@ -3,6 +3,7 @@ import Header from '@/components/Header.vue';
 import Content from '@/components/Content.vue';
 import Features from '@/components/Features.vue';
 import Testimonials from '@/components/Testimonials.vue';
+import Numbers from '@/components/Numbers.vue';
 </script>
 
 <template>
@@ -13,6 +14,9 @@ import Testimonials from '@/components/Testimonials.vue';
     <Features />
   </div>
   <Testimonials />
+  <div class="wrapper">
+    <Numbers/>
+  </div>
 </template>
 
 <style scoped>

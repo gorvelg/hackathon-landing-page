@@ -49,10 +49,13 @@
 }
 
 .testimonials-content {
-  text-align: center;
-  margin-bottom: 2rem;
-  position: relative;
-  z-index: 2; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-bottom: 2rem;
+    position: relative;
+    z-index: 2; 
 }
 
 .btn {
@@ -65,6 +68,7 @@
   border: 1px solid #FAFAFA;
   position: relative;
   z-index: 2;
+  width: fit-content;
 }
 
 </style>
