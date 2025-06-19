@@ -23,7 +23,9 @@ const { t } = useI18n()
         <span>{{ t('header-desc-2') }}</span>
       </div>
       <div class="btn">
+      <a href="https://joseph.alwaysdata.net/polygones/">
         {{ t('header-btn') }}
+      </a>
       </div>
     </div>
   </header>
