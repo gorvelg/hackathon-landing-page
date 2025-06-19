@@ -1,0 +1,8 @@
+@import './base.css';
+
+@font-face {
+  font-family: 'Blogh';
+  src: url('@/assets/fonts/Blogh.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
